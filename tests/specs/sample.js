@@ -14,7 +14,7 @@ describe("Android Demo Application", () => {
     await expect(await $("~Action Bar")).toHaveText("Action Bar");
     await $("~Action Bar").click();
     await expect(await $("~Action Bar Mechanics")).toHaveText(
-      "Action Bar Mechanics"
+      "Action Bar Mechanics---"
     );
   });
 });

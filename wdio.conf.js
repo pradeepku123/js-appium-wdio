@@ -54,12 +54,17 @@ exports.config = {
   capabilities: [
     {
       platformName: "Android",
-      "appium:deviceName": "Pixel 2",
+      "appium:deviceName": "OPPO CPH2373",
       "appium:automationName": "UIAutomator2",
       "appium:app": path.join(
         process.cwd(),
         "./app/android/ApiDemos-debug.apk"
       ),
+      "appium:ensureWebviewsHavePages": true,
+      "appium:nativeWebScreenshot": true,
+      "appium:newCommandTimeout": 3600,
+      "appium:connectHardwareKeyboard": true,
+      "appium:ignoreHiddenApiPolicyError": true,
     },
   ],
   //
