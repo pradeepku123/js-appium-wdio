@@ -54,12 +54,10 @@ exports.config = {
   capabilities: [
     {
       platformName: "Android",
+      "appium:autoGrantPermissions": true,
       "appium:deviceName": "OPPO CPH2373",
       "appium:automationName": "UIAutomator2",
-      "appium:app": path.join(
-        process.cwd(),
-        "./app/android/ApiDemos-debug.apk"
-      ),
+      "appium:app": path.join(process.cwd(), "./app/android/meesho.apk"),
       "appium:ensureWebviewsHavePages": true,
       "appium:nativeWebScreenshot": true,
       "appium:newCommandTimeout": 3600,
