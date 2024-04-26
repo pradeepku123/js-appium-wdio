@@ -57,12 +57,12 @@ exports.config = {
       "appium:autoGrantPermissions": true,
       "appium:deviceName": "OPPO CPH2373",
       "appium:automationName": "UIAutomator2",
-      "appium:app": path.join(process.cwd(), "./app/android/meesho.apk"),
       "appium:ensureWebviewsHavePages": true,
       "appium:nativeWebScreenshot": true,
       "appium:newCommandTimeout": 3600,
       "appium:connectHardwareKeyboard": true,
       "appium:ignoreHiddenApiPolicyError": true,
+      "appium:noReset": false,
     },
   ],
   //
@@ -72,7 +72,7 @@ exports.config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: "info",
+  logLevel: "debug",
   //
   // Set specific log levels per logger
   // loggers:

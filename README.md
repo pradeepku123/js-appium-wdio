@@ -56,3 +56,11 @@ process.cwd(),
 - https://github.com/appium/appium/issues/16919
 - https://stackoverflow.com/questions/75471228/error-ts-node-esm-transpile-only-resolve-did-not-call-the-next-hook-in-its
 - https://stackoverflow.com/questions/24755341/unable-to-get-android-permission-clear-app-user-data
+
+[AppDetails]
+
+https://support.testsigma.com/support/solutions/articles/32000019977-how-to-find-app-package-and-app-activity-of-your-android-app
+
+[Linux]
+$ adb devices
+$ adb shell dumpsys window | grep -E 'mCurrentFocus'
