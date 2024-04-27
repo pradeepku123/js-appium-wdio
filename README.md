@@ -64,3 +64,6 @@ https://support.testsigma.com/support/solutions/articles/32000019977-how-to-find
 [Linux]
 $ adb devices
 $ adb shell dumpsys window | grep -E 'mCurrentFocus'
+
+[Error clear-app-user-data]
+https://stackoverflow.com/questions/24755341/unable-to-get-android-permission-clear-app-user-data
